@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <STYLE>
+       h1 { text-align:center; }
+       h2 { text-align:center; }
+       p { text-align:center; }
+       div { text-align:center; }
+       button { text-align:center; }
+       input { text-align:center; }
+       body { text-align:center; }
+
+    </STYLE>
+    <title>Prosty kalkulator</title>
+    <script>
+        function suma()
+        {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            document.getElementById("wynik").innerHTML=a+b;
+        }
+    </script>
+</head>
+<body style="background-color: #2137;">
+  <h1>Prosty kalkulator</h1>  
+  <h2>==============================</h2>
+  <input type="text" id="a" value="0" dir="center">
+  <input type="text" id="b" value="0" dir="center">
+  <div id="wynik">TU BĘDZIE WYNIK</div>
+  <button onclick="suma()">+</button>
+</body>
+</html>
